@@ -1,36 +1,27 @@
 const $FS = require('fs');
 
-const content = 
-`
-<!doctype html>
+function createFileFromStream(baseFile, newFile, encoding, message) {
+  const readStream = $FS.createReadStream(baseFile, encoding);
+  const writeStream = $FS.createWriteStream(newFile);
 
-<html lang="pl">
-<head>
-  <meta charset="utf-8">
+  readStream.on('data', (chunk) => {
+    writeStream.write(chunk);
+    console.log(message);
+  });
+}
+function createFileWithPipe(baseFile, newFile, message) {
+  const readStream = $FS.createReadStream(baseFile);
+  const writeStream = $FS.createWriteStream(newFile);
 
-  <title>Main Page</title>
-  <meta name="description" content="My private site">
-  <meta name="author" content="Kamil Cecherz">
-  <link rel="stylesheet" href="css/main.css?v=1.0">
-</head>
-
-<body>
-  <script src="js/main.js"></script>
-</body>
-</html>
-`
-const content_css = ``;
+  readStream.pipe(writeStream);
+  console.log(message);
+}
 const content_js = ``;
 
 function createFiles() {
-  $FS.writeFile('index.html', content, (error) => {
-      if(error) throw error;
-      console.log('File index.html has been created.');
-  });
-  $FS.writeFile('main.css', content_css, (error) => {
-      if(error) throw error;
-      console.log('File main.css has been created.');
-  });
+  createFileFromStream('./content.txt', './index.html', {encoding: 'utf-8'}, 'Copy content.txt to index.html.');
+  createFileWithPipe('./reset_css.txt', './main.css', 'Copy reset_css.txt to main.css');
+
   $FS.writeFile('main.js', content_js, (error) => {
       if(error) throw error;
       console.log('File main.js has been created.');
