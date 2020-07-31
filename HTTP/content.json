@@ -1,0 +1,37 @@
+{    
+    "selectors": {
+        "id": [
+            "{ description }", 
+            "{ position-1 }", 
+            "{ position-2 }", 
+            "{ position-3 }", 
+            "{ position-4 }", 
+            "{ position-5 }", 
+            "{ position-6 }", 
+            "{ position-7 }", 
+            "{ position-8 }" 
+        ],
+        "buildings_name": [
+            "The tallest buildings in the world",
+            "Burj Khalifa - 828 m",
+            "Shanghai Tower - 632 m",
+            "Abraj Al-Bait Clock Tower - 601 m",
+            "Ping An Finance Center - 599 m",
+            "Lotte World Tower - 554.5 m",
+            "One World Trade Center - 541.3 m",
+            "Guangzhou CTF Finance Center - 530 m",
+            "Tianjin CTF Finance Center - 530 m"
+        ],
+        "cities_name": [
+            "List of largest cities in the world",
+            "Tokyo - 37,4 mil",
+            "Delhi - 28,5 mil",
+            "Shanghai - 25,5 mil",
+            "São Paulo - 21,6 mil",
+            "Mexico City - 21,5 mil",
+            "Cairo - 20,0 mil",
+            "Mumbai - 19,9 mil",
+            "Beijing - 19,6 mil"
+        ]
+    }      
+}

@@ -1,0 +1,24 @@
+{
+  "name": "node-course",
+  "version": "1.0.0",
+  "description": "Basics of nodejs. Small and simple applications.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pangeon/node-course.git"
+  },
+  "keywords": [
+    "nodejs",
+    "fundamentals"
+  ],
+  "author": "Kamil Cecherz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pangeon/node-course/issues"
+  },
+  "homepage": "https://github.com/pangeon/node-course#readme",
+  "dependencies": {}
+}
