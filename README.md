@@ -12,3 +12,5 @@ npm install
 ```
 
 # dependecies
+* express: ^4.17.1
+* jade: ^1.11.0
