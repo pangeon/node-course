@@ -4,7 +4,12 @@ const port = 3000;
 
 app.set('view engine', 'jade');
 
-app.get('/', (request, reponse) => reponse.render('index', {title: 'Main Page'}));
+app.get('/', (request, reponse) => reponse.render('index', 
+{
+    title: 'Main Page', 
+    query: 'User send: ' + request.query.send 
+}
+));
 app.get('/agnes', (request, reponse) => reponse.render('agnes', {title: 'Agnes'}));
 app.get('/kamil', (request, reponse) => reponse.render('kamil', {title: 'Kamil'}));
 

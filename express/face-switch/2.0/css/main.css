@@ -14,8 +14,11 @@
     transform: translate(-50%,-50%);
     filter: brightness(1);
   }
-  nav, h1 {
+  nav, h1, h2 {
     text-align: center;
+  }
+  h2 {
+    color: red;
   }
   a {
     padding: 1%;

@@ -14,3 +14,4 @@ npm install
 # dependecies
 * express: ^4.17.1
 * jade: ^1.11.0
+* mysql: ^2.18.1
