@@ -15,4 +15,5 @@ npm install
 * express: ^4.17.1
 * jade: ^1.11.0
 * mysql: ^2.18.1
-* mongodb: ^^2.2.33,
+* mongodb: ^^2.2.33
+* mongoose: ^5.9.27

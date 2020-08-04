@@ -1,6 +1,6 @@
 const $mongo = require('mongodb');
 const client = $mongo.MongoClient;
-const db_name = 'programming_books';
+const db_name = 'test';
 const url = 'mongodb://localhost:27017/' + db_name;
 
 client.connect(url, { useUnifiedTopology: true }, (error, db) => { 
