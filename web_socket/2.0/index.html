@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>WebSocket</title>
+  <meta name="description" content="My private site">
+  <meta name="author" content="Kamil Cecherz">
+</head>
+
+<body>
+  <form id="send-form">
+    <label>Send message to Node console</label>
+    <br />
+    <input type="text" id="message" />
+    <input type="submit" id="message" value="Send" />
+  </form>
+  <script>
+    const url = 'ws://localhost:3000';
+    const webSocket = new WebSocket(url);
+
+    webSocket.onmessage = (message) => { console.log(message.data) }
+
+    var webForm = document.getElementById('send-form');
+    webForm.onsubmit = () => {
+      var input = document.getElementById('message');
+      webSocket.send(input.value);
+    }
+  </script>
+</body>
+</html>

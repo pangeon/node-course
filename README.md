@@ -17,3 +17,4 @@ npm install
 * mysql: ^2.18.1
 * mongodb: ^^2.2.33
 * mongoose: ^5.9.27
+* ws: ^1.0.1

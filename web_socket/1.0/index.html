@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+
+  <title>Main Page</title>
+  <meta name="description" content="My private site">
+  <meta name="author" content="Kamil Cecherz">
+</head>
+
+<body>
+  <script>
+    const url = 'ws://localhost:3000';
+    const webSocket = new WebSocket(url);
+
+    webSocket.onmessage = (message) => { console.log(message.data) }
+  </script>
+</body>
+</html>
