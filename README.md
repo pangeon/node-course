@@ -11,6 +11,25 @@ npm install
 
 ```
 
+# tools
+* mocha
+
+```
+npm install mocha -g
+
+```
+
+* mongodb - on Linux
+
+```
+sudo apt install mongodb
+
+```
+
+alternative downolad from [MongoDB Community Server](https://www.mongodb.com/try/download/community)
+
+* xampp for MySQL - install from [Apache](https://www.apachefriends.org/pl/download.html)
+
 # dependecies
 * express: ^4.17.1
 * jade: ^1.11.0
@@ -18,3 +37,4 @@ npm install
 * mongodb: ^^2.2.33
 * mongoose: ^5.9.27
 * ws: ^1.0.1
+* chai: ^4.2.0
